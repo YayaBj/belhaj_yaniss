@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage à l'étranger | Yaniss Belhaj</title>
+    <meta name="description" content="Système de rendez-vous pour une application médicale - Stage à l'étranger">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-black text-white font-inter">
+<!-- Header -->
+<header class="bg-zinc-900 border-b border-zinc-800">
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center">
+            <a href="../index.html#projects" class="btn-icon mr-4">
+                <i data-lucide="arrow-left" class="h-5 w-5"></i>
+                <span class="sr-only">Retour</span>
+            </a>
+            <h1 class="text-2xl font-bold">
+                Stage à l'étranger : <span class="text-purple-500">Système de rendez-vous médical</span>
+            </h1>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <!-- Project Images -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="aspect-video relative overflow-hidden rounded-xl">
+                <img src="../images/applicationMedicale.png" alt="Application Médicale" class="object-cover w-full h-full">
+            </div>
+            <div class="aspect-video relative overflow-hidden rounded-xl">
+                <img src="../images/doctors.png" alt="Interface Docteurs" class="object-cover w-full h-full">
+            </div>
+        </div>
+
+        <!-- Project Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="calendar" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Période</h3>
+                </div>
+                <p class="text-zinc-400">2023</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="globe" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Lieu</h3>
+                </div>
+                <p class="text-zinc-400">Fekra Systems, Étranger</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="code-2" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Technologies</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge">Spring Boot</span>
+                    <span class="tech-badge">JavaFX</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Description du projet</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    J'ai effectué un stage à l'étranger chez Fekra Systems, où j'ai conçu et développé un système de gestion
+                    de rendez-vous pour une application médicale. Le back-end a été développé avec le framework Spring Boot,
+                    tandis que la partie front-end a été réalisée avec JavaFX. La base de données a été gérée avec
+                    PostgreSQL. Cette expérience m'a permis de renforcer mes compétences techniques et de découvrir le
+                    fonctionnement d'un environnement professionnel international.
+                </p>
+            </div>
+        </div>
+
+        <!-- Functionalities -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Fonctionnalités principales</h2>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-500">Fonctionnalités communes</h3>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                    <li>Connexion</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-500">Fonctionnalités pour les patients</h3>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                    <li>Modifier son profil</li>
+                    <li>Gérer un rendez-vous</li>
+                    <li>Consulter les docteurs disponibles</li>
+                    <li>Se connecter</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-500">Fonctionnalités pour les administrateurs</h3>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                    <li>Gérer un planning</li>
+                    <li>Gérer un rendez-vous</li>
+                    <li>Gérer les docteurs</li>
+                    <li>Gérer les patients</li>
+                    <li>Exporter un pdf des listes des patients ou des docteurs</li>
+                    <li>Valider un rendez-vous</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Technologies utilisées</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="tech-box">
+                    <i data-lucide="code-2" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Frontend</h3>
+                    <p class="text-zinc-400 text-center">JavaFX</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="bar-chart" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Backend</h3>
+                    <p class="text-zinc-400 text-center">Spring Boot (JAVA)</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="database" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Base de données</h3>
+                    <p class="text-zinc-400 text-center">PostgreSQL</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="content-section">
+            <h2 class="text-2xl font-bold mb-6">Compétences développées</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="skill-box">
+                    <p class="text-zinc-300">Réaliser un développement d'application</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Optimiser des applications informatiques</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Gérer des données de l'information</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Travailler dans une équipe informatique</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 bg-zinc-900 border-t border-zinc-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-zinc-500 mb-4 md:mb-0">
+                &copy; <span id="current-year"></span> Belhaj Yaniss. Tous droits réservés.
+            </div>
+            <div>
+                <a href="../index.html#projects" class="text-purple-500 hover:text-purple-400 transition-colors">
+                    Retour aux projets
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

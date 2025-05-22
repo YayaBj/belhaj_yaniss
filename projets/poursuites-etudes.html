@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des poursuites d'études | Yaniss Belhaj</title>
+    <meta name="description" content="Site web dynamique pour la gestion des poursuites d'études">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-black text-white font-inter">
+<!-- Header -->
+<header class="bg-zinc-900 border-b border-zinc-800">
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center">
+            <a href="../index.html#projects" class="btn-icon mr-4">
+                <i data-lucide="arrow-left" class="h-5 w-5"></i>
+                <span class="sr-only">Retour</span>
+            </a>
+            <h1 class="text-2xl font-bold">
+                Gestion des poursuites d'études : <span class="text-purple-500">Site web dynamique</span>
+            </h1>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <!-- Project Image -->
+        <div class="mb-12">
+            <div class="aspect-video relative overflow-hidden rounded-xl">
+                <img src="../images/prtEtudes.png" alt="Gestion des poursuites d'études" class="object-cover w-full h-full">
+            </div>
+        </div>
+
+        <!-- Project Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="calendar" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Période</h3>
+                </div>
+                <p class="text-zinc-400">2ème année de BUT</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="users" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Équipe</h3>
+                </div>
+                <p class="text-zinc-400">4 personnes</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="code-2" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Technologies</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">HTML/CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Description du projet</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    En deuxième année de BUT informatique, j'ai travaillé sur un projet : le développement d'une application
+                    web destinée à assister la poursuite et la direction d'études. L'application, conçue pour les
+                    responsables pédagogiques et les établissements recrutant des étudiants, permettait notamment d'importer
+                    des notes depuis Scodoc, de générer automatiquement des avis sur les poursuites d'études, et de gérer
+                    des accès sécurisés conformément au RGPD.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    Réalisé avec PHP et MySQL, ce projet a suivi la méthodologie Agile avec plusieurs sprints pour un
+                    développement itératif et incrémental. Au sein d'une équipe de quatre personnes, j'ai participé à
+                    l'analyse initiale, à la conception des diagrammes UML, à la modélisation de la base de données ainsi
+                    qu'au développement d'interfaces ergonomiques en HTML/CSS. Le projet comportait aussi des
+                    fonctionnalités telles que l'agrégation personnalisée des notes, le calcul de courbes de progression et
+                    la gestion des règles d'attribution d'avis.
+                </p>
+                <p class="text-zinc-400">
+                    Chaque sprint a permis des échanges réguliers avec le client final et une amélioration continue tant
+                    technique qu'en termes d'expérience utilisateur.
+                </p>
+            </div>
+        </div>
+
+        <!-- Functionalities -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Fonctionnalités présentes</h2>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-500">Enseignant</h3>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                    <li>Visualiser la moyenne d'un étudiant</li>
+                    <li>Consulter la liste des étudiants</li>
+                    <li>Gérer un étudiant</li>
+                    <li>Gérer une agrégation</li>
+                    <li>Gérer une ressource</li>
+                    <li>Gérer une pondération</li>
+                    <li>Consulter un graphique de la moyenne d'un étudiant</li>
+                    <li>Générer le modèle d'avis de poursuite d'études d'un étudiant</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-500">Administrateur</h3>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                    <li>Toutes les fonctionnalités de l'enseignant</li>
+                    <li>Importer un fichier CSV</li>
+                    <li>Gérer des comptes utilisateurs</li>
+                    <li>Gérer les avis</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-500">Etudiant</h3>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                    <li>Consulter son dossier</li>
+                    <li>Donner accès à son dossier à une école</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-500">Ecole</h3>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                    <li>Consulter les dossiers des étudiants qui ont donné accès à leur dossier</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-500">Utilisateur</h3>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                    <li>Se connecter</li>
+                    <li>Se déconnecter</li>
+                    <li>Créer un compte</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Technologies utilisées</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="tech-box">
+                    <i data-lucide="code-2" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Frontend</h3>
+                    <p class="text-zinc-400 text-center">HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="code" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Backend</h3>
+                    <p class="text-zinc-400 text-center">PHP</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="database" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Base de données</h3>
+                    <p class="text-zinc-400 text-center">MariaDB</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="content-section">
+            <h2 class="text-2xl font-bold mb-6">Compétences développées</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="skill-box">
+                    <p class="text-zinc-300">Réaliser un développement d'application</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Optimiser des applications informatiques</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Gérer des données de l'information</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Conduire un projet</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Travailler dans une équipe informatique</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 bg-zinc-900 border-t border-zinc-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-zinc-500 mb-4 md:mb-0">
+                &copy; <span id="current-year"></span> Belhaj Yaniss. Tous droits réservés.
+            </div>
+            <div>
+                <a href="../index.html#projects" class="text-purple-500 hover:text-purple-400 transition-colors">
+                    Retour aux projets
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

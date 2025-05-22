@@ -1,0 +1,200 @@
+/* Custom components */
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition-property: color, background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    height: 2.5rem;
+}
+
+.btn-primary {
+    background-color: hsl(267, 100%, 61%);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: hsl(267, 100%, 51%);
+}
+
+.btn-outline {
+    border: 1px solid hsl(267, 100%, 51%);
+    color: hsl(267, 100%, 61%);
+}
+
+.btn-outline:hover {
+    background-color: hsla(267, 100%, 10%, 0.5);
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    color: hsl(240, 5%, 65%);
+    transition-property: color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.btn-icon:hover {
+    color: white;
+}
+
+/* Cards */
+.card {
+    background-color: hsl(240, 6%, 10%);
+    border: 1px solid hsl(240, 5%, 16%);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition-property: border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.card:hover {
+    border-color: hsla(267, 100%, 61%, 0.5);
+}
+
+.card-header {
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.card-description {
+    color: hsl(240, 5%, 65%);
+    font-size: 0.875rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.card-footer {
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+/* Info cards for project pages */
+.info-card {
+    background-color: hsl(240, 6%, 10%);
+    border: 1px solid hsl(240, 5%, 16%);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+/* Content sections for project pages */
+.content-section {
+    background-color: hsl(240, 6%, 10%);
+    border: 1px solid hsl(240, 5%, 16%);
+    border-radius: 0.75rem;
+    padding: 2rem;
+}
+
+/* Technology badges */
+.tech-badge {
+    background-color: hsl(240, 5%, 16%);
+    color: hsl(240, 5%, 75%);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+
+/* Technology boxes */
+.tech-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: hsl(240, 5%, 16%);
+    border-radius: 0.5rem;
+}
+
+/* Skill boxes */
+.skill-box {
+    background-color: hsl(240, 5%, 16%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Skill items */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(240, 5%, 16%);
+    border-radius: 0.5rem;
+}
+
+/* Tabs */
+.tabs {
+    width: 100%;
+}
+
+.tabs-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    background-color: hsl(240, 6%, 10%);
+    border: 1px solid hsl(240, 5%, 16%);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: hsl(240, 5%, 65%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition-property: color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.tab-trigger:hover {
+    color: white;
+}
+
+.tab-trigger.active {
+    background-color: hsl(240, 5%, 16%);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    background-color: hsl(240, 6%, 10%);
+    border: 1px solid hsl(240, 5%, 16%);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.tab-content.active {
+    display: block;
+}

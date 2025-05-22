@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello-Trollé | Yaniss Belhaj</title>
+    <meta name="description" content="Amélioration d'un site web existant de gestion de projets">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-black text-white font-inter">
+<!-- Header -->
+<header class="bg-zinc-900 border-b border-zinc-800">
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center">
+            <a href="../index.html#projects" class="btn-icon mr-4">
+                <i data-lucide="arrow-left" class="h-5 w-5"></i>
+                <span class="sr-only">Retour</span>
+            </a>
+            <h1 class="text-2xl font-bold">
+                Trello-Trollé : <span class="text-purple-500">Amélioration d'un site web existant</span>
+            </h1>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <!-- Project Image -->
+        <div class="mb-12">
+            <div class="mb-12">
+                <div class="aspect-video relative overflow-hidden rounded-xl bg-zinc-900 flex items-center justify-center">
+                    <img src="../images/imageSiteOrdonnance.png" alt="Intégration API VIDAL" class="object-contain w-full h-full max-h-full">
+                </div>
+            </div>
+
+        <!-- Project Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="calendar" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Période</h3>
+                </div>
+                <p class="text-zinc-400">2ème année de BUT</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="users" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Type</h3>
+                </div>
+                <p class="text-zinc-400">Amélioration d'un site existant</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="code-2" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Technologies</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Docker</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Description du projet</h2>
+
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    En deuxième année de BUT informatique, j'ai participé au site Trello dédié à la gestion collaborative de
+                    projets. Mon travail a débuté par un audit approfondi révélant des faiblesses importantes dans la
+                    modélisation de la base PostgreSQL et des failles critiques en sécurité (injections SQL, gestion des
+                    droits d'accès). J'ai proposé une refonte de la base de données respectant les règles de normalisation,
+                    ainsi que des corrections sécuritaires via des requêtes préparées et des améliorations
+                    d'authentification.
+                </p>
+
+                <p class="text-zinc-400 mb-4">
+                    J'ai ensuite contribué à améliorer la qualité logicielle en implémentant une architecture en couches
+                    selon les principes SOLID et DRY, intégrant un meilleur système de routing et utilisant Twig pour les
+                    vues. L'expérience utilisateur a été enrichie grâce à JavaScript, AJAX et un système de Drag'n'drop,
+                    permettant une gestion fluide des éléments sans rechargement de page. J'ai aussi introduit la
+                    programmation réactive pour des mises à jour en temps réel de l'interface.
+                </p>
+
+                <p class="text-zinc-400">
+                    Enfin, j'ai mis en place une virtualisation multi-conteneur avec Docker, facilitant le déploiement
+                    rapide et fiable de l'application grâce à un fichier docker-compose.yml.
+                </p>
+            </div>
+        </div>
+
+        <!-- Functionalities -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Fonctionnalités principales</h2>
+            <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                <li>Création et gestion de tableaux, colonnes et cartes</li>
+                <li>Système d'inscription et de gestion des comptes utilisateurs</li>
+                <li>Gestion des droits d'accès aux tableaux et aux cartes</li>
+                <li>Fonctionnalité de Drag'n'drop pour déplacer les cartes</li>
+                <li>Programmation réactive pour une mise à jour en temps réel</li>
+            </ul>
+        </div>
+
+        <!-- Technologies -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Technologies utilisées</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="tech-box">
+                    <i data-lucide="code-2" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Backend</h3>
+                    <p class="text-zinc-400 text-center">PHP</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="database" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Base de données</h3>
+                    <p class="text-zinc-400 text-center">PostgreSQL</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="file-code" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Frontend</h3>
+                    <p class="text-zinc-400 text-center">HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="content-section">
+            <h2 class="text-2xl font-bold mb-6">Réalisations et compétences développées</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="skill-box">
+                    <p class="text-zinc-300">Analyse approfondie du code et de la base de données existante</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Identification des défauts et proposition d'améliorations</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Amélioration de la sécurité de l'application</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Optimisation de la modélisation de la base de données</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Intégration de JavaScript pour ajouter du dynamisme au site</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Implémentation de fonctionnalités avancées comme le Drag'n'drop</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Développement de compétences en programmation réactive</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 bg-zinc-900 border-t border-zinc-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-zinc-500 mb-4 md:mb-0">
+                &copy; <span id="current-year"></span> Belhaj Yaniss. Tous droits réservés.
+            </div>
+            <div>
+                <a href="../index.html#projects" class="text-purple-500 hover:text-purple-400 transition-colors">
+                    Retour aux projets
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

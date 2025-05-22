@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaniss Belhaj | Portfolio</title>
+    <meta name="description" content="Portfolio de Yaniss Belhaj, étudiant en BUT Informatique à l'IUT de Montpellier-Sète">
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-black text-white font-inter">
+<!-- Navigation -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-zinc-800">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+            <a href="/" class="text-xl font-bold text-white">
+                <span class="text-purple-500">Y</span>aniss Belhaj
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-zinc-400 hover:text-white transition-colors">
+                    À propos
+                </a>
+                <a href="#cv" class="text-zinc-400 hover:text-white transition-colors">
+                    CV
+                </a>
+                <a href="#projects" class="text-zinc-400 hover:text-white transition-colors">
+                    Projets
+                </a>
+                <a href="portfolio-apprentissage.html" class="text-zinc-400 hover:text-white transition-colors">
+                    Portfolio d'apprentissage
+                </a>
+                <a href="#contact" class="text-zinc-400 hover:text-white transition-colors">
+                    Contact
+                </a>
+            </nav>
+            <div class="flex space-x-2">
+                <a href="https://github.com/YayaBj" target="_blank" rel="noopener noreferrer" class="btn-icon">
+                    <i data-lucide="github" class="h-5 w-5 text-zinc-400 hover:text-white"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/yaniss-belhaj-69278a264" target="_blank" rel="noopener noreferrer" class="btn-icon">
+                    <i data-lucide="linkedin" class="h-5 w-5 text-zinc-400 hover:text-white"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden pt-16">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-black"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-[120px]"></div>
+    </div>
+    <div class="container mx-auto px-4 z-10">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <span class="text-purple-500">Développeur</span> Web & Applications
+            </h1>
+            <p class="text-xl md:text-2xl text-zinc-400 mb-8">
+                Étudiant en BUT Informatique à l'IUT de Montpellier-Sète
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="btn btn-primary">
+                    Voir mes projets
+                    <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+        <a href="#about" class="text-zinc-500 hover:text-white">
+            <i data-lucide="chevron-down" class="h-6 w-6"></i>
+        </a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-zinc-950">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">
+                <span class="text-purple-500">À propos</span> de moi
+            </h2>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-xl">
+                <h3 class="text-xl font-semibold mb-4">Biographie</h3>
+                <p class="text-zinc-400 mb-6">
+                    Je suis Yaniss Belhaj, actuellement étudiant en deuxième année de BUT Informatique à l'IUT de Montpellier-Sète.
+                    Curieux et enthousiaste, j'aime explorer les différentes facettes du numérique, en particulier tout ce qui touche
+                    au développement web, aux applications et à la gestion de projets digitaux.
+                </p>
+                <h3 class="text-xl font-semibold mb-4">Centre d'intérêt</h3>
+                <p class="text-zinc-400 mb-6">
+                    Au-delà des études, je suis quelqu'un de dynamique qui adore se plonger dans les jeux vidéo et découvrir les dernières
+                    tendances technologiques. Le sport occupe également une place importante dans mon quotidien : il me permet de garder
+                    l'esprit vif et d'entretenir ma créativité.
+                </p>
+                <h3 class="text-xl font-semibold mb-4">Parcours de formation</h3>
+                <p class="text-zinc-400 mb-6">
+                    Mon parcours en informatique m'a offert l'occasion d'expérimenter et de grandir au travers de divers projets,
+                    allant de l'intégration d'APIs pour améliorer la sécurité des prescriptions médicales, jusqu'à la création de
+                    systèmes de gestion de rendez-vous pour faciliter le quotidien dans le secteur médical. Chaque expérience m'a
+                    permis de mieux comprendre l'impact concret de la technologie sur la vie quotidienne.
+                </p>
+                <h3 class="text-xl font-semibold mb-4">Vision pour l'avenir</h3>
+                <p class="text-zinc-400 mb-6">
+                    Après avoir complété mon BUT, je souhaite poursuivre mes études dans un Master ou
+                    intégrer une école d'ingénieur spécialisée en développement. Mon objectif est clair :
+                    continuer à apprendre, relever de nouveaux défis et participer activement à des projets
+                    innovants qui ont du sens.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CV Section -->
+<section id="cv" class="py-20 bg-black">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">
+            Mon <span class="text-purple-500">CV</span>
+        </h2>
+        <div class="max-w-3xl mx-auto bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-xl">
+            <div class="aspect-[3/4] relative overflow-hidden rounded-lg mb-6">
+                <img src="images/CV-Belhaj-Yaniss.jpg" alt="CV de Yaniss Belhaj" class="object-cover w-full h-full">
+            </div>
+            <div class="text-center">
+                <a href="images/CV-Belhaj-Yaniss.pdf" download="CV-Belhaj-Yaniss.pdf" class="btn btn-primary">Télécharger le CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-zinc-950">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">
+            Mes <span class="text-purple-500">Projets</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <!-- Projet 1 -->
+            <div class="card">
+                <div class="aspect-video relative overflow-hidden">
+                    <img src="images/applicationMedicale.png" alt="Stage à l'étranger" class="object-cover w-full h-full">
+                </div>
+                <div class="card-header">
+                    <h3 class="card-title">Stage à l'étranger 2024</h3>
+                    <p class="card-description">Système de rendez-vous pour une application médicale</p>
+                </div>
+                <div class="card-content">
+                    <p class="text-zinc-400">
+                        Conception et développement d'un système de gestion de rendez-vous pour une application médicale avec
+                        Spring Boot, JavaFX et PostgreSQL.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="projets/stage-etranger.html" class="btn btn-outline">
+                        Voir le projet
+                        <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="card">
+                <div class="aspect-video relative overflow-hidden">
+                    <img src="images/prtEtudes.png" alt="Gestion des poursuites d'études" class="object-cover w-full h-full">
+                </div>
+                <div class="card-header">
+                    <h3 class="card-title">Gestion des poursuites d'études</h3>
+                    <p class="card-description">Site web dynamique pour la gestion des poursuites d'études</p>
+                </div>
+                <div class="card-content">
+                    <p class="text-zinc-400">
+                        Développement d'une application web destinée à assister la poursuite et la direction d'études avec PHP
+                        et MySQL, suivant la méthodologie Agile.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="projets/poursuites-etudes.html" class="btn btn-outline">
+                        Voir le projet
+                        <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="card">
+                <div class="aspect-video relative overflow-hidden">
+                    <img src="images/trello-trolle.png" alt="Trello-Trollé" class="object-cover w-full h-full">
+                </div>
+                <div class="card-header">
+                    <h3 class="card-title">Trello-Trollé</h3>
+                    <p class="card-description">Amélioration d'un site web existant de gestion de projets</p>
+                </div>
+                <div class="card-content">
+                    <p class="text-zinc-400">
+                        Refonte d'une application de gestion de projets inspirée de Trello, avec amélioration de la sécurité,
+                        de l'architecture et de l'expérience utilisateur.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="projets/trello-trolle.html" class="btn btn-outline">
+                        Voir le projet
+                        <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 4 -->
+            <div class="card">
+                <div class="aspect-video relative overflow-hidden">
+                    <img src="images/imageSiteOrdonnance.png" alt="Stage à l'étranger - API VIDAL" class="object-cover w-full h-full">
+                </div>
+                <div class="card-header">
+                    <h3 class="card-title">Stage à l'étranger 2025</h3>
+                    <p class="card-description">Intégration de l'API VIDAL dans une application médicale</p>
+                </div>
+                <div class="card-content">
+                    <p class="text-zinc-400">
+                        Développement d'une solution permettant de générer des alertes médicales sur les ordonnances en intégrant l'API VIDAL dans une application médicale au Maroc avec Java et Vaadin.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="projets/stage-etranger2.html" class="btn btn-outline">
+                        Voir le projet
+                        <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio d'apprentissage Banner -->
+<section class="py-12 bg-gradient-to-r from-purple-900/30 to-black">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto bg-zinc-900/80 backdrop-blur-sm border border-purple-500/30 rounded-xl p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">
+                        <span class="text-purple-500">Portfolio</span> d'apprentissage
+                    </h2>
+                    <p class="text-zinc-400">
+                        Découvrez mon parcours d'apprentissage et mon évolution à travers les compétences du BUT Informatique.
+                    </p>
+                </div>
+                <a href="portfolio-apprentissage.html" class="btn btn-primary whitespace-nowrap">
+                    Consulter
+                    <i data-lucide="external-link" class="ml-2 h-4 w-4"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="py-20 bg-black">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">
+            Mes <span class="text-purple-500">Compétences</span>
+        </h2>
+
+        <div class="max-w-4xl mx-auto bg-zinc-900 rounded-xl p-8 shadow-xl">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">HTML/CSS</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">JavaScript</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">PHP</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">Java</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">SQL</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">Spring Boot</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">Vaadin</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">HTML/CSS</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">SCRUM</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">Docker</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">Linux</div>
+                </div>
+                <div class="skill-item text-center">
+                    <div class="text-purple-500 font-bold text-lg mb-1">Git</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-zinc-950">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">
+            Me <span class="text-purple-500">Contacter</span>
+        </h2>
+
+        <div class="max-w-3xl mx-auto bg-zinc-900 border border-zinc-800 rounded-xl p-8 shadow-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Mes coordonnées</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center text-zinc-400">
+                            <i data-lucide="mail" class="h-5 w-5 mr-3 text-purple-500"></i>
+                            <span>yaniss.belhaj@etu.umontpellier.fr</span>
+                        </div>
+                        <div class="flex items-center text-zinc-400">
+                            <i data-lucide="map-pin" class="h-5 w-5 mr-3 text-purple-500"></i>
+                            <span>Montpellier, France</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Réseaux sociaux</h3>
+                    <div class="space-y-4">
+                        <a href="https://github.com/YayaBj" target="_blank" rel="noopener noreferrer" class="flex items-center text-zinc-400 hover:text-white transition-colors">
+                            <i data-lucide="github" class="h-5 w-5 mr-3 text-purple-500"></i>
+                            <span>github.com/YayaBj</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yaniss-belhaj-69278a264" target="_blank" rel="noopener noreferrer" class="flex items-center text-zinc-400 hover:text-white transition-colors">
+                            <i data-lucide="linkedin" class="h-5 w-5 mr-3 text-purple-500"></i>
+                            <span>linkedin.com/in/yaniss-belhaj</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 bg-black border-t border-zinc-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-zinc-500 mb-4 md:mb-0">
+                &copy; <span id="current-year"></span> Belhaj Yaniss. Tous droits réservés.
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://github.com/YayaBj" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-purple-500 transition-colors">
+                    <i data-lucide="github" class="h-5 w-5"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yaniss-belhaj-69278a264" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-purple-500 transition-colors">
+                    <i data-lucide="linkedin" class="h-5 w-5"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage à l'étranger - API VIDAL | Yaniss Belhaj</title>
+    <meta name="description" content="Intégration de l'API VIDAL dans une application médicale au Maroc">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .full-image-container {
+            width: 100%;
+            text-align: center;
+            background-color: #18181b;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .full-image {
+            max-width: 100%;
+            max-height: 500px;
+            height: auto;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-white font-inter">
+<!-- Header -->
+<header class="bg-zinc-900 border-b border-zinc-800">
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center">
+            <a href="../index.html#projects" class="btn-icon mr-4">
+                <i data-lucide="arrow-left" class="h-5 w-5"></i>
+                <span class="sr-only">Retour</span>
+            </a>
+            <h1 class="text-2xl font-bold">
+                Stage à l'étranger : <span class="text-purple-500">Intégration de l'API VIDAL</span>
+            </h1>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <!-- Project Image -->
+        <div class="mb-12 full-image-container">
+            <img src="../images/imageSiteOrdonnance.png" alt="Intégration API VIDAL" class="full-image">
+        </div>
+
+        <!-- Project Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="calendar" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Période</h3>
+                </div>
+                <p class="text-zinc-400">2024</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="map-pin" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Lieu</h3>
+                </div>
+                <p class="text-zinc-400">Fekra Systems, Maroc</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="code-2" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Technologies</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">Vaadin</span>
+                    <span class="tech-badge">API REST</span>
+                    <span class="tech-badge">XML</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Description du projet</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    Ce stage, réalisé chez Fekra Systems au Maroc, portait sur l'intégration de l'API VIDAL dans une application médicale développée en collaboration avec SAHTY, une entreprise spécialisée dans les solutions de gestion médicale.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    Fekra Systems est une entreprise marocaine spécialisée dans le développement de systèmes d'information, offrant des solutions sur mesure en développement de logiciels, web et mobile, gestion de bases de données, sécurité informatique et intégration de l'intelligence artificielle.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    L'application médicale sur laquelle j'ai travaillé est une solution innovante, unique au Maroc, actuellement en phase d'intégration et finalisée à environ 80%. Elle repose sur plusieurs modules distincts, dont le circuit administratif du patient, la gestion du stock pharmacie, le circuit médical et paramédical, la gestion des partenaires métiers, l'hébergement, les équipements, ainsi qu'une interface pour la radiologie et l'archivage.
+                </p>
+                <p class="text-zinc-400">
+                    L'objectif principal de mon stage était d'intégrer l'API VIDAL au sein de cette application médicale, afin de pouvoir générer des alertes sur une ordonnance en fonction des prescriptions réalisées pour un patient donné.
+                </p>
+            </div>
+        </div>
+
+        <!-- Context and Challenges -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Contexte et enjeux</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    VIDAL est une base de données médicale de référence en France, utilisée depuis de nombreuses années par les professionnels de santé. Elle regroupe des informations complètes et fiables sur les médicaments : leur composition, les posologies, les effets indésirables, les contre-indications, ou encore les interactions médicamenteuses.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    L'API VIDAL permet d'accéder à ces informations à jour directement depuis une application, de manière automatisée. Cela offre la possibilité d'interroger la base en fonction du contexte du patient et des médicaments prescrits pour générer en temps réel des alertes médicales utiles au moment de la prescription.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    Les utilisateurs finaux de cette application sont principalement des professionnels de santé : médecins hospitaliers, pharmaciens et personnel soignant qui interagissent avec l'application au quotidien. L'enjeu était donc de leur proposer un outil à la fois fiable, intuitif et adapté à leur environnement de travail.
+                </p>
+                <p class="text-zinc-400">
+                    La problématique centrale de ce stage était : Comment intégrer l'API VIDAL dans une application médicale tout en assurant sécurité, fiabilité et simplicité d'utilisation pour les professionnels de santé ?
+                </p>
+            </div>
+        </div>
+
+        <!-- Functionalities -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Fonctionnalités développées</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    D'un point de vue fonctionnel, l'application devait permettre trois actions principales :
+                </p>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2 mb-6">
+                    <li>Enregistrer un patient, avec ses informations médicales de base</li>
+                    <li>Gérer une prescription, c'est-à-dire ajouter les médicaments à administrer en précisant les posologies</li>
+                    <li>Générer une ordonnance, tout en déclenchant les alertes grâce à l'intégration de l'API VIDAL</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-4 text-white">1. Enregistrement du patient</h3>
+                <p class="text-zinc-400 mb-4">
+                    Pour l'analyse d'une ordonnance, quatre champs sont obligatoires dans la partie patient :
+                </p>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2 mb-4">
+                    <li>La date de naissance</li>
+                    <li>Le sexe</li>
+                    <li>Le poids</li>
+                    <li>La taille</li>
+                </ul>
+                <p class="text-zinc-400 mb-4">
+                    D'autres données facultatives peuvent être ajoutées pour affiner l'analyse :
+                </p>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2 mb-4">
+                    <li>La clairance de la créatinine (pour détecter une insuffisance rénale)</li>
+                    <li>Le nombre de semaines d'aménorrhée ou l'allaitement (pour les femmes)</li>
+                    <li>Les allergies connues</li>
+                    <li>Les pathologies (diabète, asthme, etc.)</li>
+                </ul>
+                <p class="text-zinc-400 mb-4">
+                    Pour les allergies et les pathologies, les données sont récupérées directement via l'API VIDAL, évitant ainsi les erreurs de saisie et garantissant des informations à jour.
+                </p>
+
+                <div class="mt-6 mb-8 border border-zinc-700 rounded-xl overflow-hidden">
+                    <img src="../images/enregistrementPatient.png" alt="Interface d'enregistrement du patient" class="w-full">
+                    <div class="bg-zinc-800 p-3 text-center text-zinc-400 text-sm">
+                        Interface d'enregistrement du patient avec les informations médicales
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4 text-white">2. Gestion des prescriptions</h3>
+                <p class="text-zinc-400 mb-4">
+                    Pour chaque médicament prescrit, plusieurs champs doivent être renseignés :
+                </p>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2 mb-4">
+                    <li>Le médicament lui-même, identifié par un ID unique VIDAL</li>
+                    <li>La voie d'administration (orale, intraveineuse, etc.)</li>
+                    <li>La dose à administrer et l'unité utilisée (comprimé, mg, mL, etc.)</li>
+                    <li>La fréquence d'administration (une fois par jour, toutes les 24h, etc.)</li>
+                    <li>La durée du traitement avec une unité claire (jour, semaine, mois)</li>
+                </ul>
+
+                <div class="mt-6 mb-8 border border-zinc-700 rounded-xl overflow-hidden">
+                    <img src="../images/enregistrementPrescription.png" alt="Interface de gestion des prescriptions" class="w-full">
+                    <div class="bg-zinc-800 p-3 text-center text-zinc-400 text-sm">
+                        Interface de gestion des prescriptions médicamenteuses
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4 text-white">3. Génération d'ordonnance avec alertes</h3>
+                <p class="text-zinc-400 mb-4">
+                    Une fois toutes les données saisies, l'application génère l'ordonnance avec :
+                </p>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2 mb-4">
+                    <li>Une synthèse du niveau de gravité des alertes</li>
+                    <li>Un rappel des informations du patient</li>
+                    <li>Des sections détaillant les vérifications faites par l'API :</li>
+                    <ul class="list-disc list-inside ml-6 text-zinc-400 space-y-2 mb-4">
+                        <li>Posologie (dose, durée, fréquence)</li>
+                        <li>Interactions médicamenteuses</li>
+                        <li>Risques liés aux allergies, à la grossesse ou à l'allaitement</li>
+                        <li>Effets indésirables et mises en garde</li>
+                        <li>Redondances (même médicament prescrit deux fois)</li>
+                    </ul>
+                    <li>Un récapitulatif du patient, des médicaments et une estimation du coût total</li>
+                </ul>
+
+                <div class="mt-6 mb-8 border border-zinc-700 rounded-xl overflow-hidden">
+                    <img src="../images/alerteOrdonnance.png" alt="Interface de génération d'ordonnance avec alertes" class="w-full">
+                    <div class="bg-zinc-800 p-3 text-center text-zinc-400 text-sm">
+                        Interface de génération d'ordonnance avec le système d'alertes VIDAL
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Approach -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Approche technique</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    Pour la partie technique, j'ai utilisé Vaadin pour construire l'interface utilisateur. C'est un framework Java qui permet de créer des interfaces web directement en Java, ce qui m'a permis de rester dans le même environnement que le reste de l'application.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    L'API VIDAL fonctionne à partir d'un fichier XML bien structuré, qui est envoyé dans une requête HTTP. Ce XML doit obligatoirement respecter un format précis, avec une balise principale &lt;prescription&gt;. À l'intérieur, on retrouve deux parties :
+                </p>
+                <ul class="list-disc list-inside text-zinc-400 space-y-2 mb-4">
+                    <li>Une balise &lt;patient&gt;, qui contient les informations médicales du patient</li>
+                    <li>Une balise &lt;prescription-lines&gt;, qui liste les médicaments prescrits avec leurs paramètres</li>
+                </ul>
+                <p class="text-zinc-400 mb-4">
+                    Une fois le XML prêt, il est envoyé à l'API, qui renvoie en réponse une page HTML avec l'analyse complète de l'ordonnance : alertes, interactions, contre-indications, effets indésirables, etc.
+                </p>
+                <p class="text-zinc-400">
+                    Mon rôle a été de faire en sorte que l'application communique avec cette API, pour afficher en temps réel les alertes liées à une ordonnance selon le profil du patient, tout en garantissant la sécurité des données médicales sensibles.
+                </p>
+            </div>
+        </div>
+
+        <!-- Organization -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Organisation du travail</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    Tout au long du stage, j'ai travaillé de manière autonome, en dehors de l'application principale. J'avançais à mon rythme, tout en échangeant régulièrement avec mon tuteur pour faire le point, poser mes questions et valider les étapes importantes.
+                </p>
+                <p class="text-zinc-400">
+                    L'entreprise fonctionne en méthodologie agile, avec des réunions régulières pour suivre l'avancement des projets. Même si je n'étais pas directement intégré aux sprints de l'équipe, cela m'a permis de rester aligné avec leurs méthodes de travail et de m'organiser efficacement.
+                </p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="content-section">
+            <h2 class="text-2xl font-bold mb-6">Compétences développées</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="skill-box">
+                    <p class="text-zinc-300">Développement d'interfaces avec Vaadin</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Intégration d'API REST</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Manipulation de données XML</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Programmation Java avancée</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Gestion de projet en autonomie</p>
+                </div>
+                <div class="skill-box">
+                    <p class="text-zinc-300">Connaissance du domaine médical</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 bg-zinc-900 border-t border-zinc-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-zinc-500 mb-4 md:mb-0">
+                &copy; <span id="current-year"></span> Belhaj Yaniss. Tous droits réservés.
+            </div>
+            <div>
+                <a href="../index.html#projects" class="text-purple-500 hover:text-purple-400 transition-colors">
+                    Retour aux projets
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

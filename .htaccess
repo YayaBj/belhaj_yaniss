@@ -1,0 +1,7 @@
+# Empêcher l'affichage de l'index des fichiers du répertoire
+Options -Indexes
+
+# Autoriser l'accès direct aux fichiers du dossier portfolio2025
+<Files "presentation.html">
+    Require all granted
+</Files>
