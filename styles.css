@@ -633,3 +633,126 @@ body {
 .footer-icon:hover {
     color: var(--color-primary);
 }
+
+/* === Nouvelles variables pour le thème néon / glass === */
+:root {
+    --color-glow: rgba(147, 51, 234, 0.6);
+    --color-glass: rgba(255, 255, 255, 0.05);
+    --color-gradient-start: #0a0a0a;
+    --color-gradient-end: #1a0b2e;
+    --transition-fast: all 0.25s ease;
+    --transition-slow: all 0.5s ease;
+}
+
+/* === Effet de fond global légèrement animé === */
+body {
+    background: radial-gradient(circle at 30% 20%, var(--color-gradient-end), var(--color-gradient-start));
+    animation: gradientShift 15s ease infinite alternate;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* === Header avec effet de verre === */
+.fixed-header {
+    background-color: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(12px) saturate(150%);
+    border-bottom: 1px solid rgba(147, 51, 234, 0.15);
+    transition: var(--transition-slow);
+}
+
+.logo {
+    color: var(--color-primary);
+    text-shadow: 0 0 6px var(--color-glow);
+    transition: var(--transition-fast);
+}
+
+.logo:hover {
+    color: #fff;
+    text-shadow: 0 0 12px var(--color-glow);
+}
+
+/* === Boutons plus vivants === */
+.btn-primary {
+    background: linear-gradient(90deg, var(--color-primary), #a855f7);
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.5);
+    transition: var(--transition-fast);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #a855f7, var(--color-primary));
+    box-shadow: 0 0 25px var(--color-glow);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary-light);
+    box-shadow: 0 0 10px var(--color-glow);
+}
+
+/* === Cartes et projets avec glow et effet 3D léger === */
+.card, .project-card {
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(147, 51, 234, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: var(--transition-slow);
+}
+
+.card:hover, .project-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.3);
+    border-color: var(--color-primary);
+}
+
+/* === Titres animés avec léger glow === */
+.section-title {
+    position: relative;
+    color: var(--color-primary);
+    text-shadow: 0 0 10px var(--color-glow);
+    letter-spacing: 1px;
+}
+
+/* === Lien nav et social icons avec effet doux === */
+.nav-link, .social-icon, .footer-icon {
+    transition: var(--transition-fast);
+}
+
+.nav-link:hover, .social-icon:hover, .footer-icon:hover {
+    color: var(--color-primary);
+    text-shadow: 0 0 10px var(--color-glow);
+}
+
+/* === Skills progress bar animée === */
+.skill-progress {
+    animation: progressGlow 2s ease-out forwards;
+    box-shadow: 0 0 10px rgba(147, 51, 234, 0.5);
+}
+
+@keyframes progressGlow {
+    0% { width: 0; }
+    100% { width: var(--progress-width, 80%); }
+}
+
+/* === Scroll-down avec glow === */
+.scroll-down {
+    text-shadow: 0 0 10px var(--color-glow);
+}
+
+/* === Hero avec fond légèrement animé === */
+.hero-bg::after {
+    background: radial-gradient(circle, rgba(147, 51, 234, 0.25), transparent 70%);
+    animation: pulseGlow 6s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    from { transform: translate(-50%, -50%) scale(1); filter: blur(100px); opacity: 0.6; }
+    to { transform: translate(-50%, -50%) scale(1.2); filter: blur(130px); opacity: 0.9; }
+}
