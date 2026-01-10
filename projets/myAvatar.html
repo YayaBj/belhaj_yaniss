@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Avatar | Yaniss Belhaj</title>
+    <meta name="description" content="Application web de gestion d’avatars développée avec Symfony et Twig">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-black text-white font-inter">
+<!-- Header -->
+<header class="bg-zinc-900 border-b border-zinc-800">
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center">
+            <a href="../index.html#projects" class="btn-icon mr-4">
+                <i data-lucide="arrow-left" class="h-5 w-5"></i>
+                <span class="sr-only">Retour</span>
+            </a>
+            <h1 class="text-2xl font-bold">
+                My Avatar : <span class="text-purple-500">Application Symfony</span>
+            </h1>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <!-- Project Image -->
+        <div class="mb-12">
+            <div class="aspect-video relative overflow-hidden rounded-xl">
+                <img src="../images/myAvatar.PNG" alt="My Avatar Symfony" class="object-cover w-full h-full">
+            </div>
+        </div>
+
+        <!-- Project Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="calendar" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Période</h3>
+                </div>
+                <p class="text-zinc-400">2ème année de BUT Informatique</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="users" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Équipe</h3>
+                </div>
+                <p class="text-zinc-400">3 à 4 personnes</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="code-2" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Technologies</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge">Symfony</span>
+                    <span class="tech-badge">Twig</span>
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Description du projet</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    Le projet <strong>My Avatar</strong> est une application web inspirée du célèbre service Gravatar. Son objectif est de permettre à chaque utilisateur d’associer une photo de profil à son adresse e‑mail, accessible ensuite via une URL générée à partir du hash SHA256 de cette adresse.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    L’application a été construite avec le framework <strong>Symfony</strong> en mode server-side rendering et intègre divers modules comme <strong>Twig</strong> pour le rendu dynamique des pages, <strong>Doctrine</strong> pour la gestion des entités, et des requêtes <strong>AJAJ/JavaScript natif</strong> pour les interactions asynchrones (vérification du login, masquage de profil, etc.).
+                </p>
+                <p class="text-zinc-400">
+                    Ce projet a renforcé mes compétences en architecture MVC, sécurité web, gestion des rôles, et manipulation de fichiers serveurs via <code>BinaryFileResponse</code>. Il m’a également sensibilisé à la séparation des responsabilités entre les couches backend et frontend dans une application Symfony.
+                </p>
+            </div>
+        </div>
+
+        <!-- Functionalities -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Fonctionnalités principales</h2>
+            <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                <li>Inscription et authentification d’utilisateurs.</li>
+                <li>Ajout, modification et suppression de photo de profil.</li>
+                <li>Masquage/démasquage du profil en temps réel via AJAX.</li>
+                <li>Accès public aux avatars via URL sécurisée par hash SHA256.</li>
+                <li>Mode maintenance global configurable via fichier <code>.env</code>.</li>
+                <li>Gestion des rôles (utilisateur, administrateur).</li>
+                <li>Commandes Symfony pour la création et suppression d’utilisateurs depuis le terminal.</li>
+                <li>Interface d’administration listant les utilisateurs avec suppression sécurisée.</li>
+            </ul>
+        </div>
+
+        <!-- Technologies -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Technologies utilisées</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="tech-box">
+                    <i data-lucide="code" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Backend</h3>
+                    <p class="text-zinc-400 text-center">Symfony, PHP, Doctrine ORM</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="monitor" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Frontend</h3>
+                    <p class="text-zinc-400 text-center">Twig, JavaScript, Bootstrap</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="database" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Base de données</h3>
+                    <p class="text-zinc-400 text-center">MySQL</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="content-section">
+            <h2 class="text-2xl font-bold mb-6">Compétences développées</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="skill-box"><p class="text-zinc-300">Développer une application web complète côté serveur</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Implémenter des fonctionnalités AJAX sans framework JS</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Gérer la sécurité (authentification, rôles, fichiers privés)</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Utiliser les événements et commandes Symfony</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Collaborer efficacement en équipe sur un projet versionné (Git)</p></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 bg-zinc-900 border-t border-zinc-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-zinc-500 mb-4 md:mb-0">
+                &copy; <span id="current-year"></span> Belhaj Yaniss. Tous droits réservés.
+            </div>
+            <div>
+                <a href="../index.html#projects" class="text-purple-500 hover:text-purple-400 transition-colors">
+                    Retour aux projets
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    lucide.createIcons();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
