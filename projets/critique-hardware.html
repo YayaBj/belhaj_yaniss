@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de critiques hardware | Yaniss Belhaj</title>
+    <meta name="description" content="Développement d’un site de critiques d’équipements informatiques avec Symfony (API REST) et Vue.js">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-black text-white font-inter">
+<!-- Header -->
+<header class="bg-zinc-900 border-b border-zinc-800">
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center">
+            <a href="../index.html#projects" class="btn-icon mr-4">
+                <i data-lucide="arrow-left" class="h-5 w-5"></i>
+                <span class="sr-only">Retour</span>
+            </a>
+            <h1 class="text-2xl font-bold">
+                Site de critiques hardware : <span class="text-purple-500">API REST & Client Vue.js</span>
+            </h1>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <!-- Project Image -->
+        <div class="mb-12">
+            <div class="aspect-video relative overflow-hidden rounded-xl bg-zinc-900 flex items-center justify-center">
+                <img src="../images/critique-hardware.png" alt="Site de critiques hardware" class="object-contain w-full h-full max-h-full">
+            </div>
+        </div>
+
+        <!-- Project Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="calendar" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Période</h3>
+                </div>
+                <p class="text-zinc-400">2ème année de BUT Informatique</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="users" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Équipe</h3>
+                </div>
+                <p class="text-zinc-400">4 personnes</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="code-2" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Technologies</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge">Symfony</span>
+                    <span class="tech-badge">API Platform</span>
+                    <span class="tech-badge">Vue.js</span>
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">SHA-256</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Description du projet</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    Ce projet a pour objectif de développer une plateforme complète de <strong>critiques d’équipements hardware</strong> (composants informatiques, périphériques, etc.), basée sur une architecture <strong>client-serveur moderne</strong>.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    Le <strong>backend</strong> est réalisé avec Symfony et exploite le framework <strong>API Platform</strong> afin de créer une API REST sécurisée conforme aux bonnes pratiques : gestion des rôles (utilisateur, administrateur), validation et publication des critiques, système d’authentification par JWT, ressources relationnelles et sous-ressources.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    Le <strong>frontend</strong> en <strong>Vue.js</strong> consomme cette API via des appels asynchrones sécurisés. Il offre une interface utilisateur réactive et ergonomique pour consulter des fiches de matériel, publier des critiques, gérer ses favoris et voir ses propres contributions.
+                </p>
+                <p class="text-zinc-400">
+                    Le projet est actuellement <strong>en cours de développement</strong>. Les principales routes de l’API sont fonctionnelles, la base de données est opérationnelle, et les composants Vue.js sont en cours d’intégration pour une version utilisable publique.
+                </p>
+            </div>
+        </div>
+
+        <!-- Functionalities -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Fonctionnalités principales</h2>
+            <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                <li>API REST Symfony avec API Platform (gestion CRUD sécurisée).</li>
+                <li>Système d’authentification JWT et gestion des rôles utilisateurs.</li>
+                <li>Création, modification et suppression d’objets critiquables (produits hardware).</li>
+                <li>Publication et validation des critiques (texte, note, critères).</li>
+                <li>Favoris utilisateurs et affichage des dernières critiques associées.</li>
+                <li>Consommation sécurisée de l’API via l’application Vue.js.</li>
+                <li>Intégration du service MyAvatar pour les photos de profil utilisateurs.</li>
+                <li>Gestion des erreurs, notifications et rafraîchissement dynamique via Vue.js.</li>
+            </ul>
+        </div>
+
+        <!-- Technologies -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Technologies utilisées</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="tech-box">
+                    <i data-lucide="server" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Backend</h3>
+                    <p class="text-zinc-400 text-center">Symfony, API Platform, PHP</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="monitor" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Frontend</h3>
+                    <p class="text-zinc-400 text-center">Vue.js, TypeScript, HTML, CSS</p>
+                </div>
+
+                <div class="tech-box">
+                    <i data-lucide="database" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Base de données</h3>
+                    <p class="text-zinc-400 text-center">MySQL / MariaDB</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="content-section">
+            <h2 class="text-2xl font-bold mb-6">Compétences et réalisations</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="skill-box"><p class="text-zinc-300">Développer une API REST complète avec Symfony</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Concevoir une architecture client-serveur robuste</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Utiliser Vue.js pour créer une interface web réactive</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Gérer l’authentification et les rôles utilisateurs via JWT</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Implémenter des relations entitées complexes avec Doctrine</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Consommer une API sécurisée avec Axios et TypeScript</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Collaborer en équipe sur un projet Git versionné</p></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 bg-zinc-900 border-t border-zinc-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-zinc-500 mb-4 md:mb-0">
+                &copy; <span id="current-year"></span> Belhaj Yaniss. Tous droits réservés.
+            </div>
+            <div>
+                <a href="../index.html#projects" class="text-purple-500 hover:text-purple-400 transition-colors">
+                    Retour aux projets
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    lucide.createIcons();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
