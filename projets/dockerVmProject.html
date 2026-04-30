@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme Docker/VM | Yaniss Belhaj</title>
+    <meta name="description" content="Application web de génération et déploiement de stacks Docker sur machines virtuelles Proxmox avec suivi pédagogique, accès SSH/SFTP et gestion de groupes">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-black text-white font-inter">
+<!-- Header -->
+<header class="bg-zinc-900 border-b border-zinc-800">
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center">
+            <a href="../index.html#projects" class="btn-icon mr-4">
+                <i data-lucide="arrow-left" class="h-5 w-5"></i>
+                <span class="sr-only">Retour</span>
+            </a>
+            <h1 class="text-2xl font-bold">
+                Plateforme Docker/VM : <span class="text-purple-500">génération & déploiement stacks</span>
+            </h1>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <!-- Project Image -->
+        <div class="mb-12">
+            <div class="aspect-video relative overflow-hidden rounded-xl bg-zinc-900 flex items-center justify-center border border-zinc-800">
+                <div class="text-center p-12 text-zinc-500">
+                    <i data-lucide="docker" class="h-24 w-24 mx-auto mb-6 text-purple-500"></i>
+                    <div class="aspect-video relative overflow-hidden rounded-xl bg-zinc-900 flex items-center justify-center">
+                        <img src="../images/dockerHomePage.png" alt="Site de critiques hardware" class="object-contain w-full h-full max-h-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="calendar" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Période</h3>
+                </div>
+                <p class="text-zinc-400">Septembre 2025 - Avril 2026</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="users" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Équipe</h3>
+                </div>
+                <p class="text-zinc-400">6 personnes</p>
+            </div>
+
+            <div class="info-card">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="code-2" class="h-5 w-5 text-purple-500 mr-2"></i>
+                    <h3 class="font-semibold">Technologies</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge">Symfony</span>
+                    <span class="tech-badge">Docker</span>
+                    <span class="tech-badge">Proxmox</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">WireGuard</span>
+                    <span class="tech-badge">SSH/SFTP</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Description du projet</h2>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-zinc-400 mb-4">
+                    Application web permettant aux développeurs, étudiants et enseignants de <strong>composer, générer et déployer des stacks Docker</strong> sur machines virtuelles Proxmox via une interface graphique moderne.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    L'utilisateur configure sa stack (images, ports, volumes, dépendances), génère un <strong>docker-compose.yml validé</strong> et un script <code>deploy.sh</code>, puis déploie sur VM. Les enseignants accèdent aux conteneurs étudiants pour suivi/correction.
+                </p>
+                <p class="text-zinc-400 mb-4">
+                    Objectif : <strong>standardiser les environnements de dev</strong> (Windows/Linux/Mac), centraliser les fichiers, faciliter le suivi pédagogique et réduire le temps de mise en place des environnements de test.
+                </p>
+            </div>
+        </div>
+
+        <!-- Traces Techniques (IMPORTANT pour la note) -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Traces techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-purple-500">1. Accès au conteneurs de la VM</h3>
+                    <div class="aspect-video bg-zinc-900 border-2 border-dashed border-zinc-700 rounded-xl flex items-center justify-center mb-4">
+                        <div class="text-center p-8 text-zinc-500">
+                            <i data-lucide="file-text" class="h-16 w-16 mx-auto mb-4"></i>
+                            <div class="aspect-video relative overflow-hidden rounded-xl bg-zinc-900 flex items-center justify-center">
+                                <img src="../images/listeDesConteneurs.png" alt="Site de critiques hardware" class="object-contain w-full h-full max-h-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-purple-500">2. Accès SSH/SFTP sécurisé à la VM</h3>
+                    <div class="aspect-video bg-zinc-900 border-2 border-dashed border-zinc-700 rounded-xl flex items-center justify-center mb-4">
+                        <div class="text-center p-8 text-zinc-500">
+                            <i data-lucide="key" class="h-16 w-16 mx-auto mb-4 text-purple-500"></i>
+                            <div class="aspect-video relative overflow-hidden rounded-xl bg-zinc-900 flex items-center justify-center">
+                                <img src="../images/acceesSShSFTP.png" alt="Site de critiques hardware" class="object-contain w-full h-full max-h-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Architecture technique</h2>
+            <div class="aspect-video bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-center mb-6">
+                <div class="text-center p-12 text-zinc-500">
+                    <div class="aspect-video relative overflow-hidden rounded-xl bg-zinc-900 flex items-center justify-center">
+                        <img src="../images/architectureDockerProject.png" alt="Site de critiques hardware" class="object-contain w-full h-full max-h-full">
+                    </div>
+                </div>
+            </div>
+            <p class="text-zinc-400">
+                Chaque VM embarque un <strong>Docker Engine</strong> isolé. Les stacks sont déployées dans des conteneurs par utilisateur/groupe. <strong>WireGuard VPN</strong> pour accès réseau sécurisé.
+            </p>
+        </div>
+
+        <!-- Functionalities -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Fonctionnalités principales</h2>
+            <ul class="list-disc list-inside text-zinc-400 space-y-2">
+                <li><strong>Interface drag & drop</strong> : composer stacks (images, ports, volumes, depends_on)</li>
+                <li><strong>Bibliothèque stacks</strong> : LAMP, MERN, Symfony+PostgreSQL (clonables)</li>
+                <li><strong>Sauvegarde/partage</strong> : configurations + versionning groupes</li>
+                <li><strong>Authentification JWT</strong> : rôles étudiant/prof/admin</li>
+                <li><strong>Déploiement VM</strong> : validation YAML + script deploy.sh auto</li>
+                <li><strong>Accès services</strong> : IP:PORT web + SSH/SFTP + copie fichiers VM</li>
+                <li><strong>Suivi pédagogique</strong> : profs accèdent conteneurs étudiants</li>
+            </ul>
+        </div>
+
+        <!-- Technologies -->
+        <div class="content-section mb-12">
+            <h2 class="text-2xl font-bold mb-6">Technologies utilisées</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="tech-box">
+                    <i data-lucide="server" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Backend</h3>
+                    <p class="text-zinc-400 text-center">Symfony, PHP, API REST</p>
+                </div>
+                <div class="tech-box">
+                    <i data-lucide="monitor" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Frontend</h3>
+                    <p class="text-zinc-400 text-center">HTML, JS, Bootstrap 5</p>
+                </div>
+                <div class="tech-box">
+                    <i data-lucide="database" class="h-12 w-12 text-purple-500 mb-4"></i>
+                    <h3 class="font-semibold mb-2">Infrastructure</h3>
+                    <p class="text-zinc-400 text-center">Docker, Proxmox, MySQL</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="content-section">
+            <h2 class="text-2xl font-bold mb-6">Compétences et réalisations</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="skill-box"><p class="text-zinc-300">Automatiser génération fichiers DevOps (docker-compose.yml, scripts)</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Développer application web + infrastructure virtualisée</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Mettre en place SSH/SFTP + gestion clés cryptographiques</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Architecture multi-utilisateur avec rôles et droits</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Intégrer Proxmox + Docker dans contexte pédagogique</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Travailler équipe : dev web + administration système</p></div>
+                <div class="skill-box"><p class="text-zinc-300">Gérer contraintes réelles VPN + virtualisation IUT</p></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-8 bg-zinc-900 border-t border-zinc-800">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-zinc-500 mb-4 md:mb-0">
+                &copy; <span id="current-year"></span> Belhaj Yaniss. Tous droits réservés.
+            </div>
+            <div>
+                <a href="../index.html#projects" class="text-purple-500 hover:text-purple-400 transition-colors">
+                    Retour aux projets
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+    lucide.createIcons();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
